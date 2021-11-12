@@ -3,10 +3,10 @@ import { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import HeadMetadata from '../components/headMetadata';
+import GoogleAnalytics from '../components/googleAnalytics';
 
 // pull data into the page
 import getFiveNewestPosts from '../api/getFiveNewestPosts';
-
 
 export default class extends Component {
 
@@ -26,6 +26,7 @@ export default class extends Component {
           title="Coding Blog"
           metaDescription="JARH is a web, developer that also writes modern NodeJS and Electronics"
         />
+        <GoogleAnalytics />
         <Header />
         <div className="homepage-container">
           Homepage content goes here.
